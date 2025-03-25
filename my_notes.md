@@ -59,4 +59,95 @@
 
 ---
 
+### Displaying and Editing Files
+- **`cat` Command:**
+  - **Read file contents:** `cat <file_name>`
+  - **Edit file contents:** Combine `cat` with redirection (`>` or `>>`).  
+    Example: `cat > file_name`  
+    The terminal will prompt you for input.
+
+---
+
+### Creating Files
+- **`touch` Command:**
+  - **Create a new file:** `touch <file_path>`  
+    Example: `touch /home/user/hello.txt`
+
+---
+
+### Listing Files
+- **`ls` Options:**
+  - `ls -l`: Provides a long listing format with more file details.
+  - `ls -a`: Lists all files, including hidden ones.
+  - `ls -lt`: Lists files in the order they were created.
+  - Combine options for detailed file information.
+
+---
+
+### Getting Help with Commands
+- **`whatis`:** Provides a brief description of a command.  
+  Example: `whatis date`
+- **`man`:** Displays detailed information about a command.  
+  Example: `man date`
+- **`-h` or `--help`:** Shows help options for a command.  
+ 
+---
+
+### Environment Variables in Linux
+- **To list all environment variables:**  type`env`
+- **Examples:**
+  - `echo $HOME` → Displays the home directory.
+  - `echo $SHELL` → Displays the shell currently in use.
+
+---
+
+### Features of Bash
+1. **Command Auto-completion:** Use `Tab` + `spacke key`
+2. **Aliases:** Shortcuts for commands.  
+   Example: `alias dt=date`
+3. **Command History:** Use `history` to list previously executed commands.
+4. **Environment Variables:** Manage environment variables using `env`.
+
+---
+
+### Creating Environment Variables
+- **Command:** `export variable_name=value`  
+  Example: `export office=Caledon`
+- **Making it Persistent:**  
+  Add the variable to configuration files such as:
+  - `~/.profile`
+  - `~/.bash_profile`
+  - `~/.bashrc`
+
+---
+
+### Bash Prompt Customization
+- **Controlled by the `PS1` variable.**
+  - View current prompt: `echo $PS1`
+  - Example prompt format:  
+    `PS1="[\d \u@\h:\w] $ "`  
+    - `\d` → Date  
+    - `\u` → Username  
+    - `\h` → Hostname  
+    - `\w` → Current working directory  
+  - Customize by editing `PS1`.
+
+---
+
+### Persisting Configuration Changes
+- To ensure customizations (e.g., aliases, variables) persist across sessions, add them to configuration files such as:
+  - `~/.profile`
+  - `~/.bash_profile`
+  - `~/.bashrc`
+
+---
+
+### Redirection Operators
+1. **`>`** → Redirects and overwrites the content of a file.  
+2. **`>>`** → Redirects and appends to the content of a file. 
+---
+
+### IMPORTANT difference
+1. **`Inside " "`** → Double qoutes allow interpretation.Variables and special chars are interpreted by shell
+2.  **`Inside ' '`** → Single quotes prevent interpretation(treat as plain text)
 
