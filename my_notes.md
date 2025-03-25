@@ -32,8 +32,9 @@
 - Moves or renames files/directories.
 - **Usage:**  
   `mv <source_path> <destination_path>`  
-  Example: `mv India/Ontario Canada/Ontario`
-
+  Example: `mv India/Ontario Canada/`
+  Rename dir: `mv Asia/India/Mumbai Asia/India/MumbaiCorrected/`
+  
 #### **7. `cp`**
 - Copies files.
 - **By default:** Works only with files, not directories.  
