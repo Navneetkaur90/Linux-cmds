@@ -25,7 +25,7 @@
   - `cd ..` (Goes one level up)
 
 #### **5. `pushd` and `popd`**
-- **`pushd`:** Pushes the current directory to the stack and switches to a new one.  
+- **`pushd`:** Pushes the current directory to the stack and switches to it  
 - **`popd`:** Pops a directory off the stack and switches back to it.
 
 #### **6. `mv`**
