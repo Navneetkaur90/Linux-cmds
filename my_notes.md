@@ -40,7 +40,9 @@
 - **By default:** Works only with files, not directories.  
   - **Usage:** `cp file1.txt file2.txt` or `cp file1.txt /path/to/destination/`
   - To copy directories, use the `-r` option:  
-    Example: `cp -r India/Ontario/City.txt Canada/Ontario/City.txt`
+    Example: `cp -r Asia/India/Mumbai Africa/Egypt/` This copies the entire Mumbai directory into Africa/Egypt/.
+
+
 
 #### **8. `rm`**
 - Removes files or directories.
@@ -56,4 +58,5 @@
 - **Recursive Copy:** Use `cp -r` to copy directories and their contents.
 
 ---
+
 
