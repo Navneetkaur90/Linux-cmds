@@ -58,7 +58,7 @@
 - To remove directories, use the `-r` option.  
   Example: `rm -r directory_name`
 
-###  **10.**`touch`**
+#### **10. `touch`**
   - Create a new file:`touch <file_path>`  
     Example: `touch /home/user/hello.txt`
 ---
