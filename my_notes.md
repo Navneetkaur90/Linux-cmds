@@ -58,9 +58,8 @@
 - To remove directories, use the `-r` option.  
   Example: `rm -r directory_name`
 
-### **10. ` Creating Files`**
-- **`touch` Command:**
-  - **Create a new file:** `touch <file_path>`  
+###  **10.`**`touch` Command:**
+  - Create a new file:`touch <file_path>`  
     Example: `touch /home/user/hello.txt`
 ---
 ### Features of Bash
@@ -75,7 +74,7 @@
   Used as the base for absolute paths.
 - **Relative Paths:** Paths relative to the current directory.
 - **Recursive Copy:** Use `cp -r` to copy directories and their contents.
-
+---
 ### Getting Help with Commands
 - **`whatis`:** Provides a brief description of a command.  
   Example: `whatis date`
