@@ -98,7 +98,6 @@
   - `~/.profile`
   - `~/.bash_profile`
   - `~/.bashrc`
-
 ---
 
 ### Persisting Configuration Changes
@@ -106,7 +105,6 @@
   - `~/.profile`
   - `~/.bash_profile`
   - `~/.bashrc`
-
 ---
 
 ### Bash Prompt Customization
