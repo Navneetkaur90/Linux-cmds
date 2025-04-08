@@ -3,14 +3,14 @@
 
  ---
  ### Hardware related Commands:  
-   - **Display cpu information:** `lscpu`
+   - Display cpu information:`lscpu`
     
-   - **Display memory information:** `lsmem`
+   - Display memory information:`lsmem`
     
-   - **Display block devices( such as USB, disk):**
+   - Display block devices( such as USB, disk):
      `lsblk`
 
-   - **Display comprehensive details about the system's hardware configuration**
+   - Display comprehensive details about the system's hardware configuration:
      `sudo lshw`
 
  ---
