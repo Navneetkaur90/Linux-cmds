@@ -10,6 +10,11 @@
 
 #### **2. `ls`**
 - Lists files and directories in the current directory.
+**`ls` Options:**
+  - `ls -l`: Provides a long listing format with more file details.
+  - `ls -a`: Lists all files, including hidden ones.
+  - `ls -lt`: Lists files in the order they were created.
+  - Combine options for detailed file information.
 
 #### **3. `mkdir`**
 - Creates new directories.
@@ -42,52 +47,38 @@
   - To copy directories, use the `-r` option:  
     Example: `cp -r Asia/India/Mumbai Africa/Egypt/` This copies the entire Mumbai directory into Africa/Egypt/.
 
-
-
-#### **8. `rm`**
-- Removes files or directories.
-- To remove directories, use the `-r` option.  
-  Example: `rm -r directory_name`
-
----
-
-### Notes
-- **Root Directory:** `/`  
-  Used as the base for absolute paths.
-- **Relative Paths:** Paths relative to the current directory.
-- **Recursive Copy:** Use `cp -r` to copy directories and their contents.
-
----
-
-### Displaying and Editing Files
-- **`cat` Command:**
+#### **8. `cat`**
   - **Read file contents:** `cat <file_name>`
   - **Edit file contents:** Combine `cat` with redirection (`>` or `>>`).  
     Example: `cat > file_name`  
     The terminal will prompt you for input.
 
----
+#### **9. `rm`**
+- Removes files or directories.
+- To remove directories, use the `-r` option.  
+  Example: `rm -r directory_name`
 
-### Creating Files
-- **`touch` Command:**
-  - **Create a new file:** `touch <file_path>`  
+#### **10. `touch`**
+  - Create a new file:`touch <file_path>`  
     Example: `touch /home/user/hello.txt`
-
 ---
-
-### Listing Files
-- **`ls` Options:**
-  - `ls -l`: Provides a long listing format with more file details.
-  - `ls -a`: Lists all files, including hidden ones.
-  - `ls -lt`: Lists files in the order they were created(newest first)
-  - Combine options for detailed file information.
-
+### Features of Bash
+1. **Command Auto-completion:** Use `Tab` + `spacke key`
+2. **Aliases:** Shortcuts for commands.  
+   Example: `alias dt=date`
+3. **Command History:** Use `history` to list previously executed commands.
+4. **Environment Variables:** Manage environment variables using `env`.
 ---
-
+### Notes
+- **Root Directory:** `/`  
+  Used as the base for absolute paths.
+- **Relative Paths:** Paths relative to the current directory.
+- **Recursive Copy:** Use `cp -r` to copy directories and their contents.
+---
 ### Getting Help with Commands
 - **`whatis`:** Provides a brief description of a command.  
   Example: `whatis date`
-- **`man`:** Displays detailed information about a command.  
+- **`man`:** Displays detailed information about a command. Man pages are manuals that are by default built into most Linux operating systems.
   Example: `man date`
 - **`-h` or `--help`:** Shows help options for a command.  
  
@@ -99,8 +90,6 @@
   - `echo $HOME` → Displays the home directory.
   - `echo $SHELL` → Displays the shell currently in use.
 
----
-
 ### Creating Environment Variables
 - **Command:** `export variable_name=value`  
   Example: `export office=Caledon`
@@ -109,18 +98,15 @@
   - `~/.profile`
   - `~/.bash_profile`
   - `~/.bashrc`
-
 ---
-### Features of Bash
-1. **Command Auto-completion:** Use `Tab` + `spacke key`
-2. **Aliases:** Shortcuts for commands.  
-   Example: `alias dt=date`
-3. **Command History:** Use `history` to list previously executed commands.
-4. **Environment Variables:** Manage environment variables using `env`.
-5. **Changing shell:**
-  - `chsh`  → open a new terminal session for the changes to take effect.
 
+### Persisting Configuration Changes
+- To ensure customizations (e.g., aliases, variables) persist across sessions, add them to configuration files such as:
+  - `~/.profile`
+  - `~/.bash_profile`
+  - `~/.bashrc`
 ---
+
 ### Bash Prompt Customization
 - **Controlled by the `PS1` variable.**
   - View current prompt: `echo $PS1`
@@ -131,14 +117,6 @@
     - `\h` → Hostname  
     - `\w` → Current working directory  
   - Customize by editing `PS1`.
-
----
-
-### Persisting Configuration Changes
-- To ensure customizations (e.g., aliases, variables) persist across sessions, add them to configuration files such as:
-  - `~/.profile`
-  - `~/.bash_profile`
-  - `~/.bashrc`
 
 ---
 
