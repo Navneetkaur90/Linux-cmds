@@ -89,6 +89,7 @@
 - **Examples:**
   - `echo $HOME` → Displays the home directory.
   - `echo $SHELL` → Displays the shell currently in use.
+  -  `chsh` → Change shell 
 
 ### Creating Environment Variables
 - **Command:** `export variable_name=value`  
