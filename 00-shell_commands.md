@@ -79,7 +79,7 @@
 - **`ls` Options:**
   - `ls -l`: Provides a long listing format with more file details.
   - `ls -a`: Lists all files, including hidden ones.
-  - `ls -lt`: Lists files in the order they were created.
+  - `ls -lt`: Lists files in the order they were created(newest first)
   - Combine options for detailed file information.
 
 ---
@@ -101,15 +101,6 @@
 
 ---
 
-### Features of Bash
-1. **Command Auto-completion:** Use `Tab` + `spacke key`
-2. **Aliases:** Shortcuts for commands.  
-   Example: `alias dt=date`
-3. **Command History:** Use `history` to list previously executed commands.
-4. **Environment Variables:** Manage environment variables using `env`.
-
----
-
 ### Creating Environment Variables
 - **Command:** `export variable_name=value`  
   Example: `export office=Caledon`
@@ -120,7 +111,16 @@
   - `~/.bashrc`
 
 ---
+### Features of Bash
+1. **Command Auto-completion:** Use `Tab` + `spacke key`
+2. **Aliases:** Shortcuts for commands.  
+   Example: `alias dt=date`
+3. **Command History:** Use `history` to list previously executed commands.
+4. **Environment Variables:** Manage environment variables using `env`.
+5. **Changing shell:**
+  - `chsh`  → open a new terminal session for the changes to take effect.
 
+---
 ### Bash Prompt Customization
 - **Controlled by the `PS1` variable.**
   - View current prompt: `echo $PS1`
@@ -150,4 +150,136 @@
 ### IMPORTANT difference
 1. **`Inside " "`** → Double qoutes allow interpretation.Variables and special chars are interpreted by shell
 2.  **`Inside ' '`** → Single quotes prevent interpretation(treat as plain text)
+---
+### Command Type 
+To verify whether a linux command is internal or external, use the type command. 
+For example, executing type echo shows that echo is a built-in command.
+---
+
+### **Linux Core Concepts**
+
+1. **Check Linux Version**:  
+   ```bash
+   uname -r
+   ```
+
+2. **Viewing and Changing Systemd Targets**:  
+   - View current target:  
+     ```bash
+     systemctl get-default
+     ```
+   - Change target:  
+     ```bash
+     systemctl set-default [target]
+     ```
+   - Common Targets:  
+     - `graphical.target`: For GUI mode.  
+     - `multi-user.target`: For command-line mode.
+
+3. **System Information Commands**:  
+   - Display CPU information:  
+     ```bash
+     lscpu
+     ```
+   - Display memory information:  
+     ```bash
+     lsblk
+     ```
+
+4. **Identify File Type**:  
+   - Check what kind of file it is:  
+     ```bash
+     file <filename>
+     ```
+   - Use `ls -l` to see details:  
+     - `d`: Directory  
+     - `-`: Regular file  
+     - `c`, `l`, `p`, `b`: Special files
+
+---
+
+### **Linux Directory Structure**
+
+1. **Common Directories**:
+   - `/mnt`: Temporary mount point for file systems.  
+   - `/tmp`: Stores temporary data.  
+   - `/media`: For external media (USB, CDs).  
+   - `/bin`: Programs like `cp`, `mv`, `ls`.  
+   - `/etc`: Configuration files.  
+   - `/var`: Logs and cached data.
+
+2. **Mounted File Systems**:
+   - View details:  
+     ```bash
+     df -h
+     ```
+     (`-h` flag: human-readable format).
+
+---
+
+### **Linux File Systems**
+
+1. **Types of File Systems**:
+   - `df`: Displays available and used storage.  
+   - `df -T`: Shows type of file system.
+
+2. **File Managers**:
+   - Debian-based:  
+     - `dpkg`, `apt`, `apt-get`.  
+   - RPM-based:  
+     - `rpm`, `yum`, `dnf`.
+
+---
+
+### **Disk Usage and File Size**
+
+1. **Check File/Directory Size**:
+   - General usage:  
+     ```bash
+     du
+     ```
+   - Human-readable format:  
+     ```bash
+     du -sh
+     ```
+   - Check file size:  
+     ```bash
+     ls -lh
+     ```
+
+---
+
+### **Archiving Files**
+
+1. **Using `tar`**:
+   - Create an archive:  
+     ```bash
+     tar -cf <archive_name.tar> <files/directories>
+     ```
+   - View archive contents:  
+     ```bash
+     tar -tf <archive_name.tar>
+     ```
+   - Extract archive contents:  
+     ```bash
+     tar -xf <archive_name.tar>
+     ```
+   - Compress archive:  
+     ```bash
+     tar -zcf <archive_name.tar.gz> <files/directories>
+     ```
+
+2. **Compression Tools**:
+   - **Compressing**:  
+     - `bzip2`: Adds `.bz2` extension.  
+     - `gzip`: Adds `.gz` extension.  
+     - `xz`: Adds `.xz` extension.
+   - **Uncompressing**:  
+     - `bunzip2`, `gunzip`, `unxz`.
+
+3. **View Compressed Files**:
+   - Without extracting:  
+     ```bash
+     bzcat, zcat, xzcat
+     ```
 
