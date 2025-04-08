@@ -131,4 +131,3 @@
 ---
 ### Command Type 
 - To verify whether a linux command is internal or external, use the type command. For example, executing type echo shows that echo is a built-in command.
----
