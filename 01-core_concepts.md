@@ -1,13 +1,11 @@
- ### To check Linux Version**:  
+ ### To check Linux Version:  
    `uname -r`
 
  ---
  ### Hardware related Commands:  
-   - **Display CPU information:** 
-     `lscpu`
+   - **Display cpu information:** `lscpu`
     
-   - **Display memory information:**  
-     `lsmem`
+   - **Display memory information:** `lsmem`
     
    - **Display block devices( such as USB, disk):**
      `lsblk`
@@ -22,7 +20,7 @@
    `ls -l  /sbin/init`
 
  ---
- ### Viewing and Changing Systemd Targets**:  
+ ### Viewing and Changing Systemd Targets:  
  Under systemd, traditional runlevels are represented as targets.
 
    - **View current target:**  
@@ -40,7 +38,7 @@
   In linux, filenames are not required to represent contents of file. In windows, .Jpeg expects a picture file. In linux, .jpeg can be a text file.
    - **Check what kind of file it is:**  
     1. `file <filename>`
-    2. Use `ls -l` to see details:  
+    2.  Use `ls -l` to see details:  
      - `d`: Directory  
      - `-`: Regular file  
      - `c`, `l`, `p`,`s`,`b`: Special files
@@ -64,7 +62,7 @@ File system defines how data is stored on a disk.Linux File System is structured
    - `df -h`: disk free : Displays how much available and used storage on disk and where the file system are mounted called mount points.
    - `df -T`: Shows type of file system (regualr,directories,special files)
 
- **Package Managers**: 
+ ### **Package Managers**: 
   Linux destributions are categorized based on packag manager they use:
    - Debian-based distributions :  `ubuntu`, `Linux Mint`, `Debian`
      - Debian package manager: `dpkg`, `apt`, `apt-get`.  
