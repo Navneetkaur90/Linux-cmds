@@ -97,8 +97,7 @@
 - **Making it Persistent:**  
   Add the variable to configuration files such as:
   - `~/.profile`
-  - `~/.bash_profile`
-  - `~/.bashrc`
+  - `~/.pam_environment`
 ---
 
 ### Persisting Configuration Changes
