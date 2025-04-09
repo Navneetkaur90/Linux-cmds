@@ -63,7 +63,7 @@
     Example: `touch /home/user/hello.txt`
 ---
 ### Features of Bash
-1. **Command Auto-completion:** Use `Tab` + `spacke key`
+1. **Command Auto-completion:** Use `Tab` key`
 2. **Aliases:** Shortcuts for commands.  
    Example: `alias dt=date`
 3. **Command History:** Use `history` to list previously executed commands.
@@ -89,7 +89,7 @@
 - **Examples:**
   - `echo $HOME` → Displays the home directory.
   - `echo $SHELL` → Displays the shell currently in use.
-  -  `chsh` → Change shell 
+  -  `chsh` → Change shell , open new terminal after changing shell.
 
 ### Creating Environment Variables
 - **Command:** `export variable_name=value`  
