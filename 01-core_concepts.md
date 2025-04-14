@@ -41,7 +41,6 @@ File system defines how data is stored on a disk.Linux File System is structured
  - **xfs, btrfs, ZFS**: Advanced file systems with features like snapshots and better performance.
  - **NFS, CIFS**: For network file systems.
 
-
  #### Commands:
    - `df -h`: disk free : Displays how much available and used storage on disk and where the file system are mounted called mount points.
    - `df -T`: Shows type of file system (regualr,directories,special files)
@@ -49,13 +48,14 @@ File system defines how data is stored on a disk.Linux File System is structured
  #### Identify File Type:  
   In linux, filenames are not required to represent contents of file. In windows, .Jpeg expects a picture file. In linux, .jpeg can be a text file.
    - **Check what kind of file it is:**  
-    1. `file <filename>`
+    1.  file <filename>
     2.  Use `ls -l` to see details:  
      - `d`: Directory  
      - `-`: Regular file  
      - **Symbolic Links (`l`)**: Pointers to other files or directories.
      - **Special Files**:
-     - **Device Files (`b` or `c`)**: Represent block or character devices (e.g., `/dev/sda`).
+       - **Device Files (`b` or `c`)**: Represent block or character devices (e.g., `/dev/sda`).
+       - **Sockets (`s`)** and **Pipes (`p`)**: Used for inter-process communication.
 
  #### **Linux Directory Structure**
    - `/`   : (Root)The starting point of the file system.
