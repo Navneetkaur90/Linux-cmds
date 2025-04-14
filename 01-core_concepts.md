@@ -36,17 +36,17 @@
  ---
  ### **Linux File Systems**
 File system defines how data is stored on a disk.Linux File System is structured into directories with specific purpose.
- ### **File System Types**
+ #### **File System Types**
  - **ext4**: Common default file system for Linux.
  - **xfs, btrfs, ZFS**: Advanced file systems with features like snapshots and better performance.
  - **NFS, CIFS**: For network file systems.
 
 
-  ### Commands:
+ #### Commands:
    - `df -h`: disk free : Displays how much available and used storage on disk and where the file system are mounted called mount points.
    - `df -T`: Shows type of file system (regualr,directories,special files)
 
- ### Identify File Type:  
+ #### Identify File Type:  
   In linux, filenames are not required to represent contents of file. In windows, .Jpeg expects a picture file. In linux, .jpeg can be a text file.
    - **Check what kind of file it is:**  
     1. `file <filename>`
@@ -57,7 +57,7 @@ File system defines how data is stored on a disk.Linux File System is structured
      - **Special Files**:
      - **Device Files (`b` or `c`)**: Represent block or character devices (e.g., `/dev/sda`).
 
-### **Linux Directory Structure**
+ #### **Linux Directory Structure**
    - `/`   : (Root)The starting point of the file system.
    - `/mnt`: Temporary mount point for file systems.  
    - `/etc`: Configuration files for the system and installed software.
