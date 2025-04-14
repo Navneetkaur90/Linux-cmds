@@ -34,6 +34,18 @@
      - `multi-user.target`: For command-line mode.
 
  ---
+ ### **Linux File Systems**
+File system defines how data is stored on a disk.Linux File System is structured into directories with specific purpose.
+ ### **File System Types**
+ - **ext4**: Common default file system for Linux.
+ - **xfs, btrfs, ZFS**: Advanced file systems with features like snapshots and better performance.
+ - **NFS, CIFS**: For network file systems.
+
+
+  ### Commands:
+   - `df -h`: disk free : Displays how much available and used storage on disk and where the file system are mounted called mount points.
+   - `df -T`: Shows type of file system (regualr,directories,special files)
+
  ### Identify File Type:  
   In linux, filenames are not required to represent contents of file. In windows, .Jpeg expects a picture file. In linux, .jpeg can be a text file.
    - **Check what kind of file it is:**  
@@ -41,26 +53,26 @@
     2.  Use `ls -l` to see details:  
      - `d`: Directory  
      - `-`: Regular file  
-     - `c`, `l`, `p`,`s`,`b`: Special files
-
----
+     - **Symbolic Links (`l`)**: Pointers to other files or directories.
+     - **Special Files**:
+     - **Device Files (`b` or `c`)**: Represent block or character devices (e.g., `/dev/sda`).
 
 ### **Linux Directory Structure**
-
+   - `/`   : (Root)The starting point of the file system.
    - `/mnt`: Temporary mount point for file systems.  
+   - `/etc`: Configuration files for the system and installed software.
+   - `/var`: Logs and cached data.
+   - `/bin`: Contains essential binary executables (Programs like `cp`, `mv`, `ls`, `cat`, `mkdir`).
+   - `/sbin`: Holds system binaries for administrative tasks (e.g., `fsck`, `reboot`).
    - `/tmp`: Stores temporary data.  
    - `/media`: For external media (USB, CDs).  
-   - `/bin`: Programs like `cp`, `mv`, `ls`.  
-   - `/etc`: Configuration files.  
-   - `/var`: Logs and cached data.
+   - `/home`: User-specific directories where personal files are stored (e.g., `/home/user`).
+   - `/lib` and `/lib64`: Shared libraries and kernel modules.
+   - `/usr`: User-level binaries, libraries, documentation, and source code.
+   - `/tmp`: Temporary files created by programs; often cleared upon reboot.
+   - `/proc` and `/sys`: Virtual filesystems providing information about system processes and hardware.
 
 ---
-
-### **Linux File Systems**
-File system defines how data is stored on a disk.Linux File System is structured into directories with specific purpose.
-
-   - `df -h`: disk free : Displays how much available and used storage on disk and where the file system are mounted called mount points.
-   - `df -T`: Shows type of file system (regualr,directories,special files)
 
  ### **Package Managers**: 
   Linux destributions are categorized based on packag manager they use:
