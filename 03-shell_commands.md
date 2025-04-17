@@ -1,5 +1,3 @@
-## File Compression and Archival
-
 ### Disk Usage :
 du - View the size of a file or a directory:
 -  h : print size in human-readable format. eg 98 MB 
@@ -11,7 +9,6 @@ du - View the size of a file or a directory:
 ---
 
 ### Archiving Files:
-
 #### Using `tar`: 
 - Used to archive data (group multiple files or directories into a single file).
 - Create an archive:  
@@ -32,8 +29,7 @@ du - View the size of a file or a directory:
   ```bash
   tar -zcf <file_name.tar>  # -z to compress tar file
   ```
-
-### Compression Tools:
+#### Compression Tools:
 - **Compressing**:  
   - `bzip2`: Adds `.bz2` extension.  
   - `gzip`: Adds `.gz` extension.  
@@ -60,24 +56,15 @@ Find files or directories.
  `find -type f`  Find only files
  `find -perm 777 -type f` Findfiles with specific permissions. 
  ```
-
 #### ** find and read Large Files**
 1. **`head` Command**:
    - Displays the first `n` lines of a file.
-   - Syntax:
-     ```
-     head -n <number_of_lines> filename
-     ```
    - Example:
      ```
      head -n 10 file.txt
      ```
 2. **`tail` Command**:
    - Displays the last `n` lines of a file.
-   - Syntax:
-     ```
-     tail -n <number_of_lines> filename
-     ```
    - Example:
      ```
      tail -n 10 file.txt
@@ -162,8 +149,8 @@ Find files or directories.
    ```
 
 #### **Other Uses:**
-- $env |grep -i user
--  ls some/dir |grep '.txt'
+- $env | grep -i user
+-  ls some/dir | grep '.txt'
 -  cat file.txt | grep 'pattern'
 
 ---
