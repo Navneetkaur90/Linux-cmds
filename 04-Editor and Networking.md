@@ -100,7 +100,7 @@
     * Interface statistics
     * Membership in multicast groups
     * etc.
-* **Example:** you want to check if HTTP process is running on port 80, you can check with `netstat -antp | grep :80` (or similar using `ss`).
+* **Example:** you want to check if HTTP process is running on port 80, you can check with `netstat -tuln | grep :80` (or similar using `ss`).
 * **`netstat`**: List listening ports (Modern alternative is `ss`).
     * `netstat -tuln`: List listening TCP and UDP ports numerically.
     * `-l`: List listening ports.
