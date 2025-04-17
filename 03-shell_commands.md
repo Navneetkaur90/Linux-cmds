@@ -55,20 +55,20 @@ ls -lh :  also prints size of file
 `locate filename` (depends on mlocate.db).If new installation of linux, may need to run sudo updatedb command as root user.
 
 #### **find:** 
- Find files or directories.
-`find path/to/dir -name *.txt` Find text files in a specific dirctory.
-`find -type f`  Find only files
-`find -perm 777 -type f` Findfiles with specific permissions. 
+Find files or directories.
+- `find path/to/dir -name *.txt` Find text files in a specific dirctory.
+- `find -type f`  Find only files
+- `find -perm 777 -type f` Findfiles with specific permissions. 
 
 To find and read large files.
-`head -n <no of lines> filename` 
-`tail -n <no of lines> filename`
+- `head -n <no of lines> filename` 
+- `tail -n <no of lines> filename`
 
-`less filename` (enable you to scroll page by page)
-`more filename`
- Space : Move forward
- b : Move backward
- q: quit
+- `less filename` (enable you to scroll page by page)
+- `more filename`
+-  Space : Move forward
+-  b : Move backward
+-  q: quit
 
 
 #### **Basics of `grep`:**
@@ -133,9 +133,9 @@ To find and read large files.
    ```
 
 #### **Other Uses:**
-  $env |grep -i user
-  ls some/dir |grep '.txt'
-  cat file.txt | grep 'pattern'
+- $env |grep -i user
+-  ls some/dir |grep '.txt'
+-  cat file.txt | grep 'pattern'
 
 ---
 ### **Read Binary Files using `Strings`**  
@@ -143,5 +143,5 @@ To find and read large files.
 
 ### **Tee**
 Duplicate o/p to file and screen simultaneously
-echo $SHELL | Tee shell.txt  (overwrites)
-echo $SHELL | Tee -a shell.txt (appends)
+- echo $SHELL | Tee shell.txt  (overwrites)
+- echo $SHELL | Tee -a shell.txt (appends)
