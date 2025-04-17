@@ -7,8 +7,7 @@ du - View the size of a file or a directory:
 -  a (all): Displays the sizes of all files, including those in subdirectories. 
 -  c (total): Displays a total count of all files and directories. 
 -  r (recursive): Used when you want to include all subdirectories. 
-
-ls -lh :  also prints size of file
+-  ls -lh :  also prints size of file
 ---
 
 ### Archiving Files
