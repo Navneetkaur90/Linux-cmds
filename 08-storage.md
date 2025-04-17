@@ -1,4 +1,4 @@
-## Storage in Linux (`/dev/`)
+## Storage in Linux 
 * `/dev/` directory contains device files.
 
 * **Block devices** (type of file) are storage devices.
@@ -36,15 +36,15 @@ lsblk OR ls -l /dev/sd* | grep "b"
 * **MBR (Master Boot Record):** An older type of partition table. Has limitations on the number and size of partitions.
 * **GPT (GUID Partition Table):** A more modern partition table standard. Supports larger disks and a greater number of partitions.
 ---
-## Managing Mounted Filesystems and Block Devices
+### Managing Mounted Filesystems and Block Devices
 **To check Mounted Filesystems:**
 
 ```bash
 df -h
 ```
-* `-h`: Displays output in a human-readable format (e.g., 1G, 500M).
+`-h`: Displays output in a human-readable format (e.g., 1G, 500M).
 
-* **To check a specific mounted filesystem (e.g., `/dev/sdb1` mounted at `/mnt/data`):**
+**To check a specific mounted filesystem (e.g., `/dev/sdb1` mounted at `/mnt/data`):**
   ```bash
   df -h | grep /dev/sdb1
   ```
@@ -52,15 +52,14 @@ df -h
   ```bash
   df -P /mnt/data
   ```
-  * `-P`: POSIX output format for better portability.
-
-## **Making Mounts Persistent Across Reboots:**
+  `-P`: POSIX output format for better portability.
+---
+### **Making Mounts Persistent Across Reboots:**
 1.  **Add an entry to the `/etc/fstab` file.**
 2.  **Syntax for an `/etc/fstab` entry:**
     ```
     <file system> <mount point> <type> <options> <dump> <pass>
     ```
-
     * `<file system>`: The device name (e.g., `/dev/sdb1`) or UUID of the filesystem.
     * `<mount point>`: The directory where the filesystem will be mounted (e.g., `/mnt/data`).
     * `<type>`: The filesystem type (e.g., `ext4`, `ntfs`, `vfat`).
@@ -77,12 +76,12 @@ df -h
     ```
     * This command attempts to mount all filesystems listed in `/etc/fstab`.
 
-**Checking type of Filesystem created on disk:**
+### Checking type of Filesystem created on disk:
 ```bash
 sudo blkid diskname(/dev/sdb1)
 ```
 * This command displays information about the block device, including its UUID and filesystem type.
-
+---
 **Tools for Managing Block Devices:**
 * **`lsblk`**: List block devices and their partitions in a tree-like format.
 * **`fdisk` / `gdisk`**: Command-line tools for partitioning block devices.
@@ -91,7 +90,7 @@ sudo blkid diskname(/dev/sdb1)
 * **`umount`**: Unmount a mounted filesystem.
 * **`df`**: Display disk space & mounts
 * **`blkid`**: Print block device attributes (UUID, filesystem type, etc.).
-
+---
 **Block Storage Devices:**
 * **DAS (Direct Attached Storage):** Storage directly connected to a host (e.g., internal hard drives, external USB drives).
 * **SAN (Storage Area Network):** A dedicated high-speed network that provides block-level storage access to multiple servers.
@@ -103,7 +102,7 @@ sudo blkid diskname(/dev/sdb1)
 **File Storage Devices:**
 * **NAS (Network Attached Storage):** File-based storage accessed over a network (e.g., using NFS or SMB/CIFS).
 
-## NFS (Network File System)
+**NFS (Network File System):**
 
 * A network protocol that allows you to share directories and files over a network.
 *  Saves data in the form of files (as opposed to block-level access).
