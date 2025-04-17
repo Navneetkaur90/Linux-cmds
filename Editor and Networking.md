@@ -27,15 +27,15 @@
 | **See IP address assigned to host interface** | `ip addr`                                                               |                                          |                                                                         |
 | **Display IP assigned to a specific interface** | `ip addr show <interface_name>`                                       | `ip addr show eth0`                      | Replace `<interface_name>` with the actual interface name (e.g., eth0). |
 | **Assign IP address to a host interface** | `ip addr add <IP_address>/<subnet_mask> dev <interface_name>`         | `ip addr add 1.2.3.4/24 eth0`          | Replace `<IP_address>`, `<subnet_mask>`, and `<interface_name>`.       |
-| **Note on network communication** |                                                                         |                                          | If no router is configured, the device won't communicate with other networks. |
 | **See routing configuration on a system** | `route`                                                               |                                          |                                                                         |
-| **Configure a route (including a gateway)** | `ip route add <destination_ip> via <gateway_IP>`                      | `ip route add 192.168.2.1 via 192.168.1.1` | Use `/32` for a specific host IP as the destination.                    |
+| **Configure a route (including a gateway)** | `ip route add <destination_ip> via <gateway_IP>`                      | `ip route add 192.168.2.1 via 192.168.1.1` | 
                             |                                          |                                                                         |
 
-**NOTE: you have to configure a gateway in all networks:**
-
-**In all hosts update `/etc/resolv.conf` pointing to nameserver**
-`nameserver 1.2.3.4` (Example)
+**NOTE:**
+- If no router is configured, the device won't communicate with other networks.
+- you have to configure a gateway in all networks.
+- In all hosts update `/etc/resolv.conf` pointing to nameserver
+  example: `nameserver 1.2.3.4` (Example)
 
 **Key Concepts:**
 * **IP Address:** Numerical label assigned to each device connected to a computer network.
