@@ -14,6 +14,7 @@
   - `ls -l`: Provides a long listing format with more file details.
   - `ls -a`: Lists all files, including hidden ones.
   - `ls -lt`: Lists files in the order they were created.
+  - `lshw`: List hardware details.
   - Combine options for detailed file information.
 
 #### **3. `mkdir`**
