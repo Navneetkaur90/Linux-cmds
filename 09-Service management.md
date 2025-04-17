@@ -31,7 +31,7 @@
     - systemctl edit <service-name> --full (If edited this way, no need to run daemon reload command). 
       You can use the --full option to edit the entire original unit file directly, but this is generally discouraged.
 
-* **`Journalctl`(System Log Viewer)**: 
+**`Journalctl`(System Log Viewer)**: 
     * Queries journal (systemd logging system)
     * Used for troubleshooting issues with `systemd` units (services, etc.).
     * For troubleshooting service failures: Use `journalctl` to view detailed logs of the failed service.
