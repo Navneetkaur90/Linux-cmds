@@ -61,17 +61,43 @@ Find files or directories.
  `find -perm 777 -type f` Findfiles with specific permissions. 
  ```
 
-To find and read large files.
-```
- `head -n <no of lines> filename`
- `tail -n <no of lines> filename`
- `less filename` (enable you to scroll page by page)
- `more filename`
-  Space : Move forward
-  b : Move backward
-  q: quit
-```
-
+#### ** find and read Large Files**
+1. **`head` Command**:
+   - Displays the first `n` lines of a file.
+   - Syntax:
+     ```
+     head -n <number_of_lines> filename
+     ```
+   - Example:
+     ```
+     head -n 10 file.txt
+     ```
+2. **`tail` Command**:
+   - Displays the last `n` lines of a file.
+   - Syntax:
+     ```
+     tail -n <number_of_lines> filename
+     ```
+   - Example:
+     ```
+     tail -n 10 file.txt
+     ```
+3. **`less` Command**:
+   - Displays file content in a paginated format for easier reading.
+   - Syntax:
+     ```
+     less filename
+     ```
+   **Key Bindings in `less`:**
+   - `Space`: Move forward to the next page.
+   - `b`: Move backward to the previous page.
+   - `q`: Quit the `less` viewer.
+4. **`more` Command**:
+   - Similar to `less`, but with fewer features.
+   - Syntax:
+     ```
+     more filename
+     ```
 
 #### **Basics of `grep`:**
  `grep` is used to locate text patterns within files or directories.
@@ -144,9 +170,26 @@ To find and read large files.
 ### **Read Binary Files using `Strings`**  
   `strings` path/to/dir binaryfile | grep 'pattern'
 
-### **Tee**
-Duplicate o/p to file and screen simultaneously
-```
- echo $SHELL | Tee shell.txt  (overwrites)
- echo $SHELL | Tee -a shell.txt (appends)
+---
+#### **`tee` Command**
+Duplicate o/p to file and screen simultaneously.
+- **General Syntax**:  
  ```
+  command | tee filename
+```
+- **Examples**: 
+ ```
+ echo $SHELL | tee shell.txt  (overwrites)
+ echo $SHELL | tee -a shell.txt (appends)
+ ```
+
+---
+#### **Special File: `/dev/null`**
+- **Definition**: A special file that discards any data written to it.
+- **Usage**:
+  ```
+  command > /dev/null
+  ```
+  - Redirects command output to `/dev/null`, effectively silencing it.
+
+---
