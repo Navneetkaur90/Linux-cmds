@@ -72,6 +72,7 @@
 **Important Note :** 
 - Changes made through these commands (`ip route add`) are **temporary*
 - To persist changes in the routing table:** Add these changes in the **/etc/network/interfaces** file.
+- Compare /etc/resolv.conf with its backup /etc/resolv.conf.bak in case of inconsistencies.
 
 ## Common Networking Commands
 * `ip link`
