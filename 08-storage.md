@@ -50,9 +50,10 @@ df -h | grep /dev/sdb1
 ```
 OR
 ```bash
-df -P /mnt/data
+df -P /mnt/data 
 ```
--P`: POSIX output format for better portability.
+`-P`: POXIS output for better portability
+
 ---
 ### **Making Mounts Persistent Across Reboots:**
 1.  **Add an entry to the `/etc/fstab` file.**
