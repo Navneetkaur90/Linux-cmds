@@ -12,7 +12,7 @@ du - View the size of a file or a directory:
 
 ### Archiving Files:
 
-### Using `tar`: 
+#### Using `tar`: 
 - Used to archive data (group multiple files or directories into a single file).
 - Create an archive:  
   ```bash
@@ -33,7 +33,7 @@ du - View the size of a file or a directory:
   tar -zcf <file_name.tar>  # -z to compress tar file
   ```
 
-### Compression Tools
+### Compression Tools:
 - **Compressing**:  
   - `bzip2`: Adds `.bz2` extension.  
   - `gzip`: Adds `.gz` extension.  
@@ -60,6 +60,7 @@ Find files or directories.
 - `find -perm 777 -type f` Findfiles with specific permissions. 
 
 To find and read large files.
+```
  `head -n <no of lines> filename`
  `tail -n <no of lines> filename`
  `less filename` (enable you to scroll page by page)
@@ -67,6 +68,7 @@ To find and read large files.
   Space : Move forward
   b : Move backward
   q: quit
+```
 
 
 #### **Basics of `grep`:**
