@@ -10,7 +10,7 @@
 1. Systemctl
 2. Journalctl
 
-* **`systemctl`**: The primary command-line tool for controlling and managing `systemd` services and the system state.
+**`systemctl`**: The primary command-line tool for controlling and managing `systemd` services and the system state.
 
 * **Uses:**
 ```
