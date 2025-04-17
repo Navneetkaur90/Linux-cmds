@@ -29,7 +29,7 @@
 | **Assign IP address to a host interface** | `ip addr add <IP_address>/<subnet_mask> dev <interface_name>`         | `ip addr add 1.2.3.4/24 eth0`          | Replace `<IP_address>`, `<subnet_mask>`, and `<interface_name>`.       |
 | **See routing configuration on a system** | `route`                                                               |                                          |                                                                         |
 | **Configure a route (including a gateway)** | `ip route add <destination_ip> via <gateway_IP>`                      | `ip route add 192.168.2.1 via 192.168.1.1` | 
-                            |                                          |                                                                         |
+  
 
 **NOTE:**
 - If no router is configured, the device won't communicate with other networks.
