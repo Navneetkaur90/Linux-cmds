@@ -52,7 +52,7 @@ df -h
   ```bash
   df -P /mnt/data
   ```
-`-P`: POSIX output format for better portability.
+  -P`: POSIX output format for better portability.
 ---
 ### **Making Mounts Persistent Across Reboots:**
 1.  **Add an entry to the `/etc/fstab` file.**
