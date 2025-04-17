@@ -45,8 +45,8 @@ chown bob:developer test-file
 ```bash
 chgrp developers test_file
 ```
-**Note:** If the group is not provided with `chown`, only the ownership is changed.
-**Important Note on Ownership Change:** Only the superuser (root) can typically change the ownership of a file. Normal users can only change the group of files they own (to a group they are a member of).
+* **Note:** If the group is not provided with `chown`, only the ownership is changed.
+* **Important Note on Ownership Change:** Only the superuser (root) can typically change the ownership of a file. Normal users can only change the group of files they own (to a group they are a member of).
 ---
 
 ## Viewing File Permissions and Ownership:
