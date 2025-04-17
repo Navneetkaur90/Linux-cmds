@@ -60,14 +60,13 @@ Find files or directories.
 - `find -perm 777 -type f` Findfiles with specific permissions. 
 
 To find and read large files.
-- `head -n <no of lines> filename` 
-- `tail -n <no of lines> filename`
-
-- `less filename` (enable you to scroll page by page)
-- `more filename`
--  Space : Move forward
--  b : Move backward
--  q: quit
+ `head -n <no of lines> filename`
+ `tail -n <no of lines> filename`
+ `less filename` (enable you to scroll page by page)
+ `more filename`
+  Space : Move forward
+  b : Move backward
+  q: quit
 
 
 #### **Basics of `grep`:**
