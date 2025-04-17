@@ -56,7 +56,7 @@ Find files or directories.
  `find -type f`  Find only files
  `find -perm 777 -type f` Findfiles with specific permissions. 
  ```
-#### ** find and read Large Files**
+#### Find and read Large Files
 1. **`head` Command**:
    - Displays the first `n` lines of a file.
    - Example:
