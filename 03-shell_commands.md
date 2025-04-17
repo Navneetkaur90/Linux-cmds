@@ -148,15 +148,10 @@ Find files or directories.
    grep 'pattern' file1.txt file2.txt
    ```
 
-#### **Other Uses:**
+10. **Other Uses:**
 - $env | grep -i user
 -  ls some/dir | grep '.txt'
 -  cat file.txt | grep 'pattern'
-
----
-### **Read Binary Files using `Strings`**  
-  `strings` path/to/dir binaryfile | grep 'pattern'
-
 ---
 #### **`tee` Command**
 Duplicate o/p to file and screen simultaneously.
@@ -169,7 +164,9 @@ Duplicate o/p to file and screen simultaneously.
  echo $SHELL | tee shell.txt  (overwrites)
  echo $SHELL | tee -a shell.txt (appends)
  ```
-
+---
+### **Read Binary Files using `Strings`**  
+`strings` path/to/dir binaryfile | grep 'pattern'
 ---
 #### **Special File: `/dev/null`**
 - **Definition**: A special file that discards any data written to it.
@@ -178,5 +175,3 @@ Duplicate o/p to file and screen simultaneously.
   command > /dev/null
   ```
   - Redirects command output to `/dev/null`, effectively silencing it.
-
----
