@@ -3,26 +3,28 @@
 - To run a script in the background, we have to define it as a service.
 - Services are background processes often called daemons. 
 
-**Step 1: Create a service unit file under `/etc/systemd/system/example-service.service`.**
-**Service Events (Start, Stop, Failure) are automatically logged in `systemd`**.
+#### Create a service unit file under `/etc/systemd/system/example-service.service`. Service Events (Start, Stop, Failure) are automatically logged in `systemd`.
 ---
 
 ### Tools for Managing `systemd` Services
 1. Systemctl
 2. Journalctl
 
-**`systemctl`**: The primary command-line tool for controlling and managing `systemd` services and the system state.
- * **Uses:**
-        1.  `start <service_name>`: Start a service.
-        2.  `stop <service_name>`: Stop a service.
-        3.  `restart <service_name>`: Restart a service.
-        4.  `reload <service_name>`: Reload the configuration of a service without interrupting it.
-        5.  `enable <service_name>`: Enable a service to start automatically during the boot process.
-        6.  `disable <service_name>`: Disable a service from starting automatically during boot.
-        7.  `status <service_name>`: View the current status of a service (active, inactive, running, failed, etc.).
-        8.  `get-default  or set-default` : View and set targets.
-        9.  `list-units --type=service --all`:  List all available service unit files (active and inactive).
-        10. `list-unit-files --type=service`: shows only active units.
+* **`systemctl`**: The primary command-line tool for controlling and managing `systemd` services and the system state.
+
+* **Uses:**
+```
+    1.  `start <service_name>`: Start a service. </n>
+    2.  `stop <service_name>`: Stop a service.
+    3.  `restart <service_name>`: Restart a service.
+    4.  `reload <service_name>`: Reload the configuration of a service without interrupting it.
+    5.  `enable <service_name>`: Enable a service to start automatically during the boot process.
+    6.  `disable <service_name>`: Disable a service from starting automatically during boot.
+    7.  `status <service_name>`: View the current status of a service (active, inactive, running, failed, etc.).
+    8.  `get-default  or set-default` : View and set targets.
+    9.  `list-units --type=service --all`:  List all available service unit files (active and inactive).
+    10. `list-unit-files --type=service`: shows only active units.
+```
 
  * **Reloading system configuration:**
     - systemctl daemon-reload (Run this cmd after making any changes to service Unit file).
@@ -56,3 +58,17 @@
 * **Log Files:** Where the messages are usually stored.
 * **Daemon (`syslogd` or `rsyslogd`):** The background program that handles logs.
 * Files maintained at `/etc/rsyslog.d`.
+
+---
+### Locate the Nginx Configuration Files**
+The primary Nginx configuration file is typically found in:
+- `/etc/nginx/nginx.conf`
+
+Additional configuration files might be located in:
+- `/etc/nginx/sites-available/`
+- `/etc/nginx/sites-enabled/`
+
+Use the following command to locate all Nginx configuration files:
+```bash
+grep -R "listen" /etc/nginx/
+```
