@@ -1,4 +1,5 @@
 ## Modifying File Permissions (`chmod`):
+To change user's home dir,login shell and group affiliations, changing primary group of user ; use chmod
 ```bash
 chmod <permissions> <file>
 ```
