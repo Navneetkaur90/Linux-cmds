@@ -49,7 +49,7 @@ du - View the size of a file or a directory:
   ```
 ---
 
-### Search Files and Directories:
+## Search Files and Directories:
 #### **locate:** 
 `locate filename` (depends on mlocate.db).If new installation of linux, may need to run sudo updatedb command as root user.
 
