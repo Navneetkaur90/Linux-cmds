@@ -9,7 +9,7 @@ du - View the size of a file or a directory:
 ---
 
 ### Archiving Files:
-#### Using `tar`: 
+Using `tar`: 
 - Used to archive data (group multiple files or directories into a single file).
 - Create an archive:  
   ```bash
@@ -166,7 +166,9 @@ Duplicate o/p to file and screen simultaneously.
  ```
 ---
 ### **Read Binary Files using `Strings`**  
+```
 `strings` path/to/dir binaryfile | grep 'pattern'
+```
 ---
 #### **Special File: `/dev/null`**
 - **Definition**: A special file that discards any data written to it.
