@@ -24,7 +24,7 @@ lsblk OR ls -l /dev/sd* | grep "b"
 ---
 **Commonly Used Filesystems:**
 * **Extended Filesystem Series (`ext`)**: A standard Linux filesystem. ext2,ext3,ext4(common)
-    * **Creating and Mounting an ext4 filesystem:**
+    **Creating and Mounting an ext4 filesystem:**
         ```bash
         mkfs.ext4 /dev/sdb1  # Create an ext4 filesystem on the partition /dev/sdb1
         mkdir /mnt/ext4      # Create a mount point directory
@@ -52,7 +52,7 @@ df -h
   ```bash
   df -P /mnt/data
   ```
-  `-P`: POSIX output format for better portability.
+`-P`: POSIX output format for better portability.
 ---
 ### **Making Mounts Persistent Across Reboots:**
 1.  **Add an entry to the `/etc/fstab` file.**
