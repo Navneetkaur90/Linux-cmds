@@ -45,14 +45,14 @@ df -h
 `-h`: Displays output in a human-readable format (e.g., 1G, 500M).
 
 **To check a specific mounted filesystem (e.g., `/dev/sdb1` mounted at `/mnt/data`):**
-  ```bash
-  df -h | grep /dev/sdb1
-  ```
-  OR
-  ```bash
-  df -P /mnt/data
-  ```
-  -P`: POSIX output format for better portability.
+```bash
+df -h | grep /dev/sdb1
+```
+OR
+```bash
+df -P /mnt/data
+```
+-P`: POSIX output format for better portability.
 ---
 ### **Making Mounts Persistent Across Reboots:**
 1.  **Add an entry to the `/etc/fstab` file.**
