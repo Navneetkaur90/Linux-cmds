@@ -1,6 +1,6 @@
 ## File Compression and Archival
 
-### Disk Usage  
+### Disk Usage :
 du - View the size of a file or a directory:
 -  h : print size in human-readable format. eg 98 MB 
 -  s : Displays only the total size for each file/directory
@@ -10,9 +10,9 @@ du - View the size of a file or a directory:
 -  ls -lh :  also prints size of file
 ---
 
-### Archiving Files
+### Archiving Files:
 
-### Using `tar` 
+### Using `tar`: 
 - Used to archive data (group multiple files or directories into a single file).
 - Create an archive:  
   ```bash
@@ -72,6 +72,7 @@ To find and read large files.
 
 #### **Basics of `grep`:**
  `grep` is used to locate text patterns within files or directories.
+
 **General Syntax**:  
   ```
   grep [options] 'pattern' file(s)
@@ -138,7 +139,7 @@ To find and read large files.
 
 ---
 ### **Read Binary Files using `Strings`**  
-  strings binaryfile | grep 'pattern'
+  `strings` path/to/dir binaryfile | grep 'pattern'
 
 ### **Tee**
 Duplicate o/p to file and screen simultaneously
