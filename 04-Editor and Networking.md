@@ -91,7 +91,8 @@
     * `dig`
 * **Trace the Network Route**
     * `traceroute` This tool outlines the route from the source (the laptop) to the remote server and highlights any problematic hops.
-
+---
+## Network Investigation Commands
 **Netstat (Legacy - consider using `ss`):**
 * Used to print info of:
     * Network connections
@@ -100,8 +101,6 @@
     * Membership in multicast groups
     * etc.
 * **Example:** you want to check if HTTP process is running on port 80, you can check with `netstat -antp | grep :80` (or similar using `ss`).
-
-## Network Investigation Commands
 * **`netstat`**: List listening ports (Modern alternative is `ss`).
     * `netstat -tuln`: List listening TCP and UDP ports numerically.
     * `-l`: List listening ports.
