@@ -22,7 +22,7 @@ chmod <permissions> <file>
     * **Example:** `chmod 754 test_file` (owner: rwx (4+2+1=7), group: rx (4+0+1=5), other: r-- (4+0+0=4))
 ---
 
-## Understanding File Permission Notation
+### Understanding File Permission Notation
 * **`chmod <owner><group><other> <file/dir>`**
     * Owner, Group, Other represent the permissions for each category.
     * Permissions are represented numerically (sum of R, W, X) or symbolically (rwx).
@@ -33,7 +33,7 @@ chmod <permissions> <file>
     * So, `chmod 600` results in `rw-------` permissions.
 ---
 
-**Changing File Ownership and group(`chown`):**
+## Changing File Ownership and group(`chown`):
 ```bash
 chown <owner>[:<group>] <file>
 ```
@@ -41,16 +41,16 @@ chown <owner>[:<group>] <file>
 ```bash
 chown bob:developer test-file
 ```
-**Change only the group:** 
+### Change only the group:
 ```bash
 chgrp developers test_file
 ```
-* **Note:** If the group is not provided with `chown`, only the ownership is changed.
+**Note:** If the group is not provided with `chown`, only the ownership is changed.
 **Important Note on Ownership Change:** Only the superuser (root) can typically change the ownership of a file. Normal users can only change the group of files they own (to a group they are a member of).
 ---
 
 ## Viewing File Permissions and Ownership:
-How to See File Permissions, Ownership of a File After Using `chown`or `chmod`
+**How to See File Permissions, Ownership of a File After Using `chown`or `chmod`**
 * **`ls -l`**: View file permissions.
 * **`ls -ld <directory>`**: View permissions of a directory itself (not its contents).
 
