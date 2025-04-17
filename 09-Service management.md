@@ -60,7 +60,7 @@
 * Files maintained at `/etc/rsyslog.d`.
 
 ---
-### Locate the Nginx Configuration Files**
+### Locate the Nginx Configuration Files
 The primary Nginx configuration file is typically found in:
 - `/etc/nginx/nginx.conf`
 
