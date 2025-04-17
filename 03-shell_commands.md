@@ -55,9 +55,11 @@ du - View the size of a file or a directory:
 
 #### **find:** 
 Find files or directories.
-- `find path/to/dir -name *.txt` Find text files in a specific dirctory.
-- `find -type f`  Find only files
-- `find -perm 777 -type f` Findfiles with specific permissions. 
+```
+ `find path/to/dir -name *.txt` Find text files in a specific dirctory.
+ `find -type f`  Find only files
+ `find -perm 777 -type f` Findfiles with specific permissions. 
+ ```
 
 To find and read large files.
 ```
@@ -144,5 +146,7 @@ To find and read large files.
 
 ### **Tee**
 Duplicate o/p to file and screen simultaneously
-- echo $SHELL | Tee shell.txt  (overwrites)
-- echo $SHELL | Tee -a shell.txt (appends)
+```
+ echo $SHELL | Tee shell.txt  (overwrites)
+ echo $SHELL | Tee -a shell.txt (appends)
+ ```
