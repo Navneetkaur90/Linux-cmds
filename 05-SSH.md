@@ -62,7 +62,16 @@ scp myfile.txt user@192.168.1.100:/home/user/
 ```bash
 scp user@192.168.1.100:/home/user/myfile.txt ./
 ``` 
-
 **SCP Options:**
 * `-r`: To copy directories instead of files (recursive).
 * `-p`: To preserve the ownership and permissions of the source files.
+
+---
+## File Permissions (chmod)
+* **`chmod 600 <file/dir>`**: Gives the owner full read and write access no execute, but no other user can access it.
+    * **R**ead = 4
+    * **W**rite = 2
+    * e**X**ecute = 1
+* **Best Practice (for SSH keys):**
+    * `chmod 600 ~/.ssh/id_rsa`: Secure file permissions for private SSH key.
+    * Review `~/.ssh/authorized_keys` file on the remote server.
